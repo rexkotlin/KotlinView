@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+    <FrameLayout
+            android:id="@+id/flContainerHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <android.support.design.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            style="@style/Widget.MaterialComponents.BottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/colorAccent"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:title="hello"
+            app:titleTextColor="@android:color/black"
+            app:navigationIcon="@mipmap/ic_launcher"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            app:layout_anchor="@id/bottomAppBar" />
+</android.support.design.widget.CoordinatorLayout>

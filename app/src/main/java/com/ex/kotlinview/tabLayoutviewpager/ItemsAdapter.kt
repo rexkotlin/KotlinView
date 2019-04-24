@@ -1,0 +1,21 @@
+package com.ex.kotlinview.tabLayoutviewpager
+
+import android.support.v4.app.Fragment
+import android.support.v4.app.FragmentManager
+import android.support.v4.app.FragmentPagerAdapter
+
+class ItemsAdapter(fragmentManager:FragmentManager, val fragList: List<Fragment>, val titleList: List<String>): FragmentPagerAdapter(fragmentManager) {
+
+    override fun getItem(position: Int): Fragment {
+        return fragList[position]
+    }
+
+    override fun getCount(): Int {
+        return fragList.size
+    }
+
+    override fun getPageTitle(position: Int): CharSequence {
+        return titleList[position]
+    }
+
+}

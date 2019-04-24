@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KotlinView</string>
+
+    <string name="home">home</string>
+    <string name="chat">chat</string>
+    <string name="profile">profile</string>
+    <string name="back">back</string>
+
+</resources>
